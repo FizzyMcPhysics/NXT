@@ -7,13 +7,10 @@ Created on Wed Apr 10 19:40:11 2013
 
 
 # Works great! =D
+import path_helper
+from robot import *
 
 
-
-from Robot import * 
-
-
-        
 robot = Robot()
 
 robot.move(75)
@@ -28,6 +25,6 @@ for i in range(4):
     except:
         print "Your balls ass method didn't work"
         break
-    
+
 robot.stop()
 
