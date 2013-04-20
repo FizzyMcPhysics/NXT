@@ -20,7 +20,7 @@ class Motor(BaseMotor):
         self._read_state()
         self.sync = 0
         self.turn_ratio = 0
-        self.tacho_count
+        self.tacho_count = 0
         self.block_tacho_count
         #self.rotation_count = values
         try:
@@ -84,7 +84,7 @@ class Motor(BaseMotor):
 
         '''
 
-    def tacho_count(self):
+    def get_tacho_count(self):
         return self.tacho_count
 
     def block_tacho_count(self):
